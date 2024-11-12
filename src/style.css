@@ -1,0 +1,336 @@
+* {
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* LOGIN PAGE STARTS */
+
+body {
+  background: rgb(243, 154, 243);
+}
+
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(24, 23, 23);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-top: 50px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.loginTitle {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.loginTitle2 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  background: rgb(243, 154, 243);
+}
+
+input::placeholder {
+  color: black;
+  font-size: 22px;
+}
+
+.login {
+  border: none;
+  height: 45px;
+  width: 350px;
+  border-bottom: 2px solid rgb(214, 214, 214);
+  background-color: white;
+}
+
+.submitButton {
+  border: none;
+  height: 50px;
+  width: 250px;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(5deg, rgb(243, 154, 243), #c015cf);
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.submitButton:hover {
+  background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+  cursor: pointer;
+}
+
+.signUpNavigation {
+  background-color: rgb(24, 23, 23);
+  color: white;
+  font-size: 30px;
+}
+
+.signupLink {
+  color: purple;
+  background-color: rgb(24, 23, 23);
+}
+/* LOGIN PAGE DONE */
+
+/* SIGNUP PAGE STARTS */
+
+
+.signupDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(24, 23, 23);
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-top: 50px;
+  height: 350px;
+  border-radius: 50px;
+}
+
+.signupInput {
+  border: none;
+  height: 45px;
+  width: 350px;
+  border-bottom: 2px solid rgb(214, 214, 214);
+  background-color: white;
+}
+
+.signupButton {
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(5deg, rgb(243, 154, 243), #c015cf);
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.signupButton:hover {
+  background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+  cursor: pointer;
+}
+
+.loginLink {
+  color: purple;
+  background-color: rgb(24, 23, 23);
+}
+
+/* SIGNUP PAGE DONE */
+
+/* HOME PAGE STARTS HERE*/
+.homeContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.topBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 200px); /* Adjust width for sidebar */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.usernameDisplay {
+  margin-right: 15px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.logoutButton {
+  padding: 5px 10px;
+  background: linear-gradient(5deg, rgb(243, 154, 243), #c015cf);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background: linear-gradient(5deg, rgb(243, 154, 243), #c015cf);
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background: rgb(243, 154, 243);
+  color: black;
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 19px;
+
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  background: rgb(243, 154, 243);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  background: rgb(243, 154, 243);
+  font-size: 30px;
+}
+
+.sidebar li:hover {
+  background: rgb(248, 35, 248);
+}
+
+.contentArea {
+  flex: 1;
+  padding: 20px;
+  padding-top: 70px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contentArea h2, h3, p {
+  margin-top: 0;
+  background-color: #f1f1f1;
+}
+
+/*QUESTIONS IN HOME PAGE*/
+
+.questionsBox {
+  background-color: white;
+  border-radius: 7px;
+}
+
+.questionsBox::placeholder {
+  font-size: 20px;
+}
+
+.questionsSubmitButton {
+  display: block;
+  height: 40px;
+  width: 120px;
+  background: linear-gradient(5deg, rgb(243, 154, 243), #c015cf);
+  border-radius: 50px;
+  border: none;
+  margin-top: 10px;
+}
+
+.questionsSubmitButton:hover {
+  background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+  cursor: pointer;
+}
+
+.submittedQuestionsTitle {
+  margin-top: 20px;
+  border: 3px solid rgb(248, 131, 248);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 50px;
+}
+
+.askedQuestions {
+  margin-top: 20px;
+  border: 3px solid rgb(248, 131, 248);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  height: 55px;
+
+}
+
+.deleteButton {
+  background-color: rgb(248, 131, 248);
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  height: 30px;
+  width: 75px;
+  font-weight: bold;
+}
+
+.deleteButton:hover {
+  cursor: pointer;
+    background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+}
+
+/*QUESTIONS IN HOME PAGE ENDS*/
+
+/*REPLY SECTION IN HOME PAGE*/
+
+.repliesHeader {
+  font-size: 20px;
+  margin-left: 40px;
+  
+}
+
+.replyButton {
+  background-color: rgb(248, 131, 248);
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  height: 30px;
+  width: 75px;
+  font-weight: bold;
+}
+
+.replyInputContainer {
+  margin-top: 15px;
+}
+
+.replyInput {
+  border-radius: 5px;
+}
+
+.submitReply {
+  background-color: rgb(248, 131, 248);
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  width: 75px;
+  font-weight: bold;
+}
+
+.submitReply:hover {
+  cursor: pointer;
+  background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+}
+
+.deleteReplyButton {
+  background-color: rgb(248, 131, 248);
+  margin-left: 10px;
+  border: none;
+  border-radius: 50px;
+  height: 20px;
+  width: 30px;
+  font-weight: bold;
+}
+
+.deleteReplyButton:hover {
+  cursor: pointer;
+  background: linear-gradient(5deg, rgb(248, 131, 248), #860292);
+}
+
+/* HOME PAGE ENDS HERE*/
